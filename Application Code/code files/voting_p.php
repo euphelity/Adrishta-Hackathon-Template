@@ -26,15 +26,7 @@ session_start();
     />
     <link rel="stylesheet" href="css files/login.css" />
     <title>Home</title>
-    <style>
-      body{
-overflow-y:hidden;
-        }
-      
-    
-    </style>
   </head>
-  
 
   <body>
     <nav
@@ -71,9 +63,9 @@ overflow-y:hidden;
 
 
     <?php 
-    echo "<div class='container'>
+    echo "<div>
     <div class='pt-3'>
-      <h1 class='text-center pb-4'></h1>
+      <h1 class='text-center pb-4'>Vote For Student Council Persident</h1>
     </div>
     ";
         include 'dbcon.php';
@@ -127,9 +119,9 @@ overflow-y:hidden;
         }
       }
       else{
-        echo "<div>
-    <div >
-    <marquee>  <h1>Please login to cast your vote!!</h1></marquee>
+        echo "<div class='container'>
+    <div class='pt-3'>
+      <h1 class='text-center pb-4'>You cannot vote for this Category!</h1>
     </div>
     ";
       }
