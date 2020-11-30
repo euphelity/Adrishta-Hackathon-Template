@@ -42,7 +42,7 @@ if(isset($_POST['submit'])){
     }
     else{
         if($password === $cpassword){
-            if($regno == "^2018" ||$regno == "^2019" ||$regno == "^2020"){
+            if(preg_match("/2018/i",$regno) || preg_match("/2019/i",$regno) || preg_match("/2020/i",$regno)){
                 $ifvoted = 0;
             }
             else{
