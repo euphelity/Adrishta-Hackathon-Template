@@ -35,7 +35,7 @@ if(isset($_POST['submit'])){
     $email = $_POST['email'];
     $password =$_POST['password'];
 
-    $emailsearch = " select * from registration where email='$email' ";
+    $emailsearch = " select * from voters where email='$email' ";
     $query = mysqli_query($con, $emailsearch);
 
     $email_count = mysqli_num_rows($query);
@@ -50,7 +50,7 @@ if(isset($_POST['submit'])){
         if($pass_decode){
             if(isset($_POST['admin']) && $_POST['admin'] == '1' ){
                 if($email=="admin1@gmail.com"){
-                    $displayquery = "select * from registration where email='$email'";
+                    $displayquery = "select * from voters where email='$email'";
                 $query = mysqli_query($con, $displayquery);
                 $row = mysqli_fetch_assoc($query);
                 $_SESSION["username"]=$row['username'];
@@ -71,7 +71,7 @@ if(isset($_POST['submit'])){
                 }
             }
              else{
-                $displayquery = "select * from registration where email='$email'";
+                $displayquery = "select * from voters where email='$email'";
                 $query = mysqli_query($con, $displayquery);
                 $row = mysqli_fetch_assoc($query);
                 $_SESSION["username"]=$row['username'];
@@ -79,7 +79,7 @@ if(isset($_POST['submit'])){
                 ?>
                     <script>
                         alert("Login Successful");
-                        location.replace("food.php");
+                        location.replace("home2.php");
                 </script>
                 <?php
             }
@@ -160,7 +160,7 @@ if(isset($_POST['submit'])){
                 <input type="checkbox" name="admin" value="1">
                 Login as Administrator ?
                 
-                <p class="text-center">Don't have an account? <a href="registration.php">Sign-Up here</a></p>
+                <p class="text-center">Don't have an account? <a href="signup.php">Sign-Up here</a></p>
             </form>
             </article>
         </div>

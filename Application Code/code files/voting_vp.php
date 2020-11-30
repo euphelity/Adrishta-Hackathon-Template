@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -58,106 +61,81 @@
       </div>
     </nav>
 
-    <h2 style="padding: 10px 0px">
-      <marquee style="background-color: white"
-        >Announcements: Vote for 2020 Council Elections!!</marquee
-      >
-    </h2>
-    <div class="container">
-      <div class="upper-main">
-        <div class="country-name">
-          <h1>Sikkim Manipal Institute Of Technology</h1>
-        </div>
-        <div class="country-banner">
-          <div class="country-flag">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXkxBo_Obdc6VKDMwazEWthcw1qRFHjTs1qg&usqp=CAU"
-              style="width: 80%"
-            />
 
-            <button class="sec-1-btn h5">
-              <a style="text-decoration: none; color: black" href="voting_p.php">
-                Vote for Council
-              </a>
-            </button>
-            <button class="sec-1-btn h5">
-              <a
-                style="text-decoration: none; color: black"
-                href="results.html"
-              >
-                View Results
-              </a>
-            </button>
-          </div>
-          <div class="county-welcome">
-            <span class="welcome"> Election </span>
-            <span class="year"> 2020 </span>
-          </div>
-        </div>
-        <div class="adroit">
-          Your vote, your voice!
-          <span
-            >Designed by:
-            <a href="https://twitter.com/Bollybkampo">AYUSHI</a> &copy;
-            2020</span
-          >
-        </div>
-        <!-- Building -->
-      </div>
-      <div class="election-2019">
-        <div class="papper"></div>
-        <div class="hand"></div>
-        <div class="hand-inner"></div>
-        <div class="inner-sleeve"></div>
-        <div class="sleeve"></div>
-        <div class="ballot-top-cover">
-          <div class="hole"></div>
-        </div>
-        <div class="ballot-top"></div>
-        <div class="ballot">
-          <div class="middle"></div>
-        </div>
-      </div>
+    <?php 
+    echo "<div class='container'>
+    <div class='pt-3'>
+      <h1 class='text-center pb-4'>Vote For Student Council Vice Persident</h1>
     </div>
+    ";
+        include 'dbcon.php';
+      if($_SESSION['flag_vp']==0){
 
+            echo "<!-- Candidate Detials -->
+                <table border='1'>
+                <tr>
+                <th>Photo</th>
+                <th>Candidate Id</th>
+                <th>Name</th>
+                <th>Team</th>
+                <th>Team Slogan</th>
+                <th>Vote!</th>
+                </tr>";
+        $candidateselect = "select * from candidates where position = 'Vice President' ";
+        $candidatequery = mysqli_query($con, $candidateselect);
+        $i=1;
+        echo "<form method='POST'>";
+        while($candidate = mysqli_fetch_assoc($candidatequery)){
+            $tid = $candidate['tid'];
+            $teamselect = "select * from teams where tid = '$tid' ";
+            $userquery = mysqli_query($con, $teamselect);
+            $user = mysqli_fetch_assoc($userquery);
+            echo "<tr>";
+            echo "<td><img src='" . $candidate['photo'] . "' alt='default'/>";
+            echo "<td>" . $candidate['cid'] . "</td>";
+            echo "<input type = 'hidden' name = 'cid" . $i . "' value='" . $candidate['cid'] . "'>";
+            echo "<td>" . $candidate['cname'] . "</td>";
+            echo "<td>" . $user['tname'] . "</td>";
+            echo "<td>" . $user['slogan'] . "</td>";
+            echo "<td><button type = 'submit' name = 'details" . $i ."' id='myBtn'>Vote</button> </td>"; 
+            echo "</tr>";  
+            $i++; 
+        }
+        echo "</form>";
+        echo "</table>";
+        $j=1;
+        while($j<=$i){
+            
+            if( isset($_POST['details' . $j]) ){
+                  $_SESSION["flag_vp"] = 1;
+                  $cid = $_POST['cid' . $j];
+                  $voteselect = " update candidates set votes = votes + 1 where cid = '$cid' ";
+                  $votequery = mysqli_query($con, $voteselect);
+                  ?>
+                        <script>location.replace('voting_ms.php')</script>
+                  <?php
+            }
+            $j++;
+        }
+      }
+      else{
+        echo "<div class='container'>
+    <div class='pt-3'>
+      <h1 class='text-center pb-4'>You have already voted for this Category!</h1>
+    </div>
+    ";
+      }
+        echo "</div> </div>" ;
+          ?> 
     <div
       style="
         height: 100vh;
         position: relative;
         top: 400px;
         background-color: white;
-      "
-    >
+      ">
       <hr />
       <div>
-        <h1 style="text-decoration: underline; font-family: times new roman">
-          Details of Election
-        </h1>
-      </div>
-      <hr />
-      <ol>
-        <li>
-          1.The voting for council election will take place on 1st December,2020
-        </li>
-        <li>
-          2.It is mandotary to be a SMIT student to cast your precious votes.
-        </li>
-        <li>
-          3.Resgister yourself as a voter , login and then vote your favoutite
-          candidate .
-        </li>
-        <li>
-          4. Voting portal will be activated from 9 am sharp to 5 pm sharp.
-        </li>
-        <li>
-          5.Each voter can only cast one vote for every post in the council.
-        </li>
-        <li>
-          6.The results of election will be out at 6 pm sharp on 20th
-          December,2020.
-        </li>
-      </ol>
-
       <div id="footer">
         <div class="InnerSection" style="margin-right: 10vh">
           <!-- Add Logo -->

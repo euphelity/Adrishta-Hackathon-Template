@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -24,6 +27,31 @@
     <link rel="stylesheet" href="css files/home.css" />
     <title>Home</title>
   </head>
+
+  <?php
+    include 'dbcon.php';
+    $id = $_SESSION['id'];
+    $userselect = " select * from voters where id = '$id' ";
+    $userquery = mysqli_query($con, $userselect);
+    $user = mysqli_fetch_assoc($userquery);
+    if($user['ifvoted'] == 0){
+        $_SESSION["flag_p"]=0;
+        $_SESSION["flag_vp"]=0;
+        $_SESSION["flag_ms"]=0;
+        $_SESSION["flag_cs"]=0;
+        $_SESSION["flag_ss"]=0;
+        $_SESSION["flag_gs"]=0;
+    }
+    else{
+        $_SESSION["flag_p"]=1;
+        $_SESSION["flag_vp"]=1;
+        $_SESSION["flag_ms"]=1;
+        $_SESSION["flag_cs"]=1;
+        $_SESSION["flag_ss"]=1;
+        $_SESSION["flag_gs"]=1;
+    }
+    ?>
+
 
   <body>
     <nav
@@ -76,7 +104,7 @@
             />
 
             <button class="sec-1-btn h5">
-              <a style="text-decoration: none; color: black" href="voting_p.php">
+              <a style="text-decoration: none; color: black" href="voting.php">
                 Vote for Council
               </a>
             </button>
