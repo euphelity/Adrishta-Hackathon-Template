@@ -1,4 +1,4 @@
-## Team Number \34 - \I Voted!
+## Team Number 34 - I Voted!
 
 The participants are required to fork this repository and create a public Github repository under their own username (Single repository per team). _Clone the repo on your local system and build on top of that_
 
