@@ -106,7 +106,7 @@ if(isset($_POST['submit'])){
 
     <div class="container">
     <nav
-      class="navbar navbar-expand-md navbar-dark fixed-top px-5 py-0 theme bg-primary"
+      class="navbar navbar-expand-md navbar-dark fixed-top px-5 py-0 theme bg-primary" id="custom-nav"
     >
       <a class="navbar-brand pl-5 ml-5" href="#"
         ><span class="logo"
@@ -124,14 +124,14 @@ if(isset($_POST['submit'])){
       <div class="collapse navbar-collapse w-100" id="collapsibleNavbar">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="active" href="#">HOME</a>
+            <a  href="home1.html">HOME</a>
           </li>
 
           <li class="nav-item">
             <a href="#footer">CONTACT</a>
           </li>
           <li class="nav-item">
-            <a href="login.php">LOGIN/SIGN UP</a>
+            <a href="login.php" class="active">LOGIN/SIGN UP</a>
           </li>
         </ul>
       </div>
@@ -164,11 +164,12 @@ if(isset($_POST['submit'])){
             </form>
             </article>
         </div>
+</div>
         <div id="footer">
         <div class="InnerSection" style="margin-right: 10vh">
           <!-- Add Logo -->
-          <h3 class="InnerHeading">SMIT Council Elections</h3>
-          Cast your precious votes to the most deserving candidates for the SMIT
+          <h2 class="InnerHeading">SMIT Council Elections</h2>
+         Cast your precious votes to the most deserving candidates for the SMIT
           Council-2020. Remember...Every vote matters!!
         </div>
         <div class="InnerSection">
@@ -240,7 +241,7 @@ if(isset($_POST['submit'])){
           </ol>
         </div>
       </div>
-    </div>
+    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
