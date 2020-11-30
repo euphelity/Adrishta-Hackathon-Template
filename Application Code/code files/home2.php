@@ -103,12 +103,12 @@ session_start();
               style="width: 80%"
             />
 
-            <button class="sec-1-btn h5">
-              <a style="text-decoration: none; color: black" href="voting.php">
-                Vote for Council
-              </a>
-            </button>
-            <button class="sec-1-btn h5">
+            <div class="button sec-1-btn h5">
+              <span class="content"><a style="text-decoration: none; color: black" href ="voting_p.php">Vote for Council</a></span>
+              <span class="badge">New</span>
+            </div>
+          
+            <button class=" button sec-1-btn h5">
               <a
                 style="text-decoration: none; color: black"
                 href="results.html"
@@ -150,10 +150,10 @@ session_start();
 
     <div
       style="
-        height: 100vh;
+        height: 89vh;
         position: relative;
         top: 400px;
-        background-color: white;
+       
       "
     >
       <hr />

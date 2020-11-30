@@ -24,9 +24,17 @@ session_start();
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css files/home.css" />
+    <link rel="stylesheet" href="css files/login.css" />
     <title>Home</title>
+    <style>
+      body{
+overflow-y:hidden;
+        }
+      
+    
+    </style>
   </head>
+  
 
   <body>
     <nav
@@ -65,7 +73,7 @@ session_start();
     <?php 
     echo "<div class='container'>
     <div class='pt-3'>
-      <h1 class='text-center pb-4'>Vote For Student Council Persident</h1>
+      <h1 class='text-center pb-4'></h1>
     </div>
     ";
         include 'dbcon.php';
@@ -119,9 +127,9 @@ session_start();
         }
       }
       else{
-        echo "<div class='container'>
-    <div class='pt-3'>
-      <h1 class='text-center pb-4'>You cannot vote for this Category!</h1>
+        echo "<div>
+    <div >
+    <marquee>  <h1>Please login to cast your vote!!</h1></marquee>
     </div>
     ";
       }
