@@ -59,7 +59,7 @@ INSERT INTO `candidates` (`cid`,`cname`, `tid`, `position`, `votes`, `regNo`, `p
 (5, 'Ruchika', 1, 'Mess Secretary', 0, '201800288', 'photos/pic1.jpg'),
 (6, 'Naman', 1, 'Sports Secretary', 0, '201800388', 'photos/pic8.jpg'),
 (7, 'Sanyam', 2, 'president', 0, '201800188', 'photos/pic9.jpg'),
-(8, 'Sushant', 2, 'Vice President', 0, '201800133', 'photos/pic10jpg'),
+(8, 'Sushant', 2, 'Vice President', 0, '201800133', 'photos/pic10.jpg'),
 (9, 'Kritika', 2, 'General Secretary', 0, '201800688', 'photos/pic 2.jpg'),
 (10, 'Bhavuk', 2, 'Cultural Secretary', 0, '201800508', 'photos/pic11.jpg'),
 (11, 'Semal', 2, 'Mess Secretary', 0, '201800108', 'photos/pic12.jpg'),
