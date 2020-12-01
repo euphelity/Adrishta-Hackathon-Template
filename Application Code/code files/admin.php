@@ -56,7 +56,14 @@ session_start();
             <a href="#footer">CONTACT</a>
           </li>
           <li class="nav-item">
-            <a href="login.php">LOGIN/SIGN UP</a>
+          <div class="dropdown">
+              <a class="dropdown-toggle" style="color:white" data-toggle="dropdown">
+                <?php echo $_SESSION["username"]; ?>
+              </a>
+              <div class="dropdown-menu theme">
+                <a class="dropdown-item" style="color:blue" href="dbend.php">LOGOUT</a>
+              </div>
+            </div>
           </li>
         </ul>
       </div>

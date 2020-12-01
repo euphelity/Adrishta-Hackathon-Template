@@ -77,21 +77,34 @@ To run this project, one must have to install a virtual server i.e XAMPP on the 
 
 ### Screenshots
 
-![Flow Chart](screenshots/Screenshot58.png?raw=true "Flow-Chart")
-![Flow Chart](screenshots/Screenshot59.png?raw=true "Flow-Chart")
-![Flow Chart](screenshots/Screenshot60.png?raw=true "Flow-Chart")
-![Flow Chart](screenshots/Screenshot61.png?raw=true "Flow-Chart")
-![Flow Chart](screenshots/Screenshot62.png?raw=true "Flow-Chart")
-![Flow Chart](screenshots/Screenshot63.png?raw=true "Flow-Chart")
-![Flow Chart](screenshots/Screenshot64.png?raw=true "Flow-Chart")
+Home Page
+![Flow Chart](screenshots/Screenshot71.png?raw=true "Flow-Chart")
+![Flow Chart](screenshots/Screenshot72.png?raw=true "Flow-Chart")
+
+Login Page
+![Flow Chart](screenshots/Screenshot76.png?raw=true "Flow-Chart")
+
+Signup Page
+![Flow Chart](screenshots/Screenshot75.png?raw=true "Flow-Chart")
+
+Voting during Election
 ![Flow Chart](screenshots/Screenshot65.png?raw=true "Flow-Chart")
 ![Flow Chart](screenshots/Screenshot66.png?raw=true "Flow-Chart")
 ![Flow Chart](screenshots/Screenshot67.png?raw=true "Flow-Chart")
 ![Flow Chart](screenshots/Screenshot68.png?raw=true "Flow-Chart")
 ![Flow Chart](screenshots/Screenshot69.png?raw=true "Flow-Chart")
 ![Flow Chart](screenshots/Screenshot70.png?raw=true "Flow-Chart")
-![Flow Chart](screenshots/Screenshot71.png?raw=true "Flow-Chart")
-![Flow Chart](screenshots/Screenshot72.png?raw=true "Flow-Chart")
+
+Admin Page
+![Flow Chart](screenshots/Screenshot64.png?raw=true "Flow-Chart")
+
+Results Page
+![Flow Chart](screenshots/Screenshot58.png?raw=true "Flow-Chart")
+![Flow Chart](screenshots/Screenshot59.png?raw=true "Flow-Chart")
+![Flow Chart](screenshots/Screenshot60.png?raw=true "Flow-Chart")
+![Flow Chart](screenshots/Screenshot61.png?raw=true "Flow-Chart")
+![Flow Chart](screenshots/Screenshot62.png?raw=true "Flow-Chart")
+![Flow Chart](screenshots/Screenshot63.png?raw=true "Flow-Chart")
 
 ### Team Members
 
