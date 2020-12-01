@@ -50,9 +50,9 @@ Affix the relevant screenshots of the developed project here.
 List of team member names and email IDs with their contributions:
 
 
-|Aditi Bansal|aditi_201800488@smit.smu.edu.in|Suggested the UI/UX and Worked on Front end of the website |
+|Aditi Bansal|aditi_201800488@smit.smu.edu.in| |
 
-|Kumari Ayushi Sinha|kumari_201800539@smit.smu.edu.in|Something important|
+|Kumari Ayushi Sinha|kumari_201800539@smit.smu.edu.in|Suggested the UI/UX and Worked on Front end of the website|
 
 |Pratyush Sharma|pratyush_201800543@smit.smu.edu.in|Worked on backend development and database|
 
