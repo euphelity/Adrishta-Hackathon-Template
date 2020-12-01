@@ -62,7 +62,7 @@ To run this project, one must have to install a virtual server i.e XAMPP on the 
 
 4. To login as a administrator:
 
-   a. After creating an account, click on the “Login” option and enter the valid credentails.
+   a. After creating an account, click on the “Login” option and enter the email as admin202000000@smit.smu.edu.in and password as admin.
    b. After that select the checkbox to login as an administrator.
    c. After successfully logging in, the page will be redirected to the admin page.
    d. Click on “Enable” to enable the election/voting process.
