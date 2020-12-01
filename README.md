@@ -27,7 +27,7 @@ A brief description of
 
 #### Architecture Diagram
 
-Affix an image of the flow diagram/architecture diagram of the solution
+![Flow Chart](screenshots/flowchart.png?raw=true "Flow-Chart")
 
 #### Technical Description
 
@@ -74,7 +74,7 @@ Affix an image of the flow diagram/architecture diagram of the solution
   
 
 ### Screenshots
-![Flow Chart](screenshots/flowchart.png?raw=true "Flow-Chart")
+
 
 ### Team Members
 
