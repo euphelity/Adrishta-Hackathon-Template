@@ -51,10 +51,7 @@ CREATE TABLE `candidates`
 -- Dumping data for table `candidates`
 --
 
-INSERT INTO `candidates` (`
-cid`,
-`cname
-`, `tid`, `position`, `votes`, `regNo`, `photo`) VALUES
+INSERT INTO `candidates` (`cid`,`cname`, `tid`, `position`, `votes`, `regNo`, `photo`) VALUES
 (1, 'Nehal', 1, 'president', 0, '201800488', 'photos/default_photo.jpg'),
 (2, 'Ronak', 1, 'Vice President', 0, '201800566', 'photos/default_photo.jpg'),
 (3, 'Rahul', 1, 'General Secretary', 0, '201800608', 'photos/default_photo.jpg'),
@@ -88,11 +85,7 @@ CREATE TABLE `election`
 -- Dumping data for table `election`
 --
 
-INSERT INTO `election` (`
-eid`,
-`ename
-`, `status`) VALUES
-(1, 'Student Council Election', 'Enabled');
+INSERT INTO `election` (`eid`,`ename`, `status`) VALUES(1, 'Student Council Election', 'Enabled');
 
 -- --------------------------------------------------------
 
@@ -116,10 +109,7 @@ CREATE TABLE `teams`
 -- Dumping data for table `teams`
 --
 
-INSERT INTO `teams` (`
-tid`,
-`tname
-`, `members`, `slogan`) VALUES
+INSERT INTO `teams` (`tid`,`tname`, `members`, `slogan`) VALUES
 (1, 'Team1', 6, 'Advancing Knowledge. Transforming Lives.'),
 (2, 'Team2', 6, 'Bank on me. Will treasure your vote.');
 
@@ -149,11 +139,7 @@ CREATE TABLE `voters`
 -- Dumping data for table `voters`
 --
 
-INSERT INTO `voters` (`
-id`,
-`username
-`, `email`, `password`, `regNo`, `ifvoted`) VALUES
-(1, 'admin', 'admin_202000000@smit.smu.edu.in', '$2y$10$xhmPbUI7aMaegtrFoxHVduymuH0s0KqAgn4xMtYvXjFQ9i44vcCB2', '202000000', 0);
+INSERT INTO `voters` (`id`,`username`, `email`, `password`, `regNo`, `ifvoted`) VALUES(1, 'admin', 'admin_202000000@smit.smu.edu.in', '$2y$10$xhmPbUI7aMaegtrFoxHVduymuH0s0KqAgn4xMtYvXjFQ9i44vcCB2', '202000000', 0);
 
 --
 -- Indexes for dumped tables
