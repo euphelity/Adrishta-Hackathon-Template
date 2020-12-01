@@ -16,6 +16,7 @@ A brief description of
 
 - What is the proposed solution?
   The solution is that all the eligible voters can cast their precious votes online.All they need to do is have a valid email id , registration number and password to signup. 
+  
 ### Solution Description
 
 Explain your solution to the problem in detail here.
