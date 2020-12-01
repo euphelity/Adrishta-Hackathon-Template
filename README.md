@@ -19,8 +19,6 @@ A brief description of
   
 ### Solution Description
 
-Explain your solution to the problem in detail here.
-
   A voter can simply sign up to make a new account and then Login to vote.They can only vote if they are a student of SMIT belonging to 1st, 2nd or 3rd year. 
   The person can make their account only using their official E-mail ids given by the collage and entering a valid registration number.
   A non- SMITian can only access the results of the election, restricting them from voting, thus eliminating outside interferance.
@@ -76,8 +74,7 @@ Affix an image of the flow diagram/architecture diagram of the solution
   
 
 ### Screenshots
-
-Affix the relevant screenshots of the developed project here.
+![Flow Chart](screenshots/flowchart.png?raw=true "Flow-Chart")
 
 ### Team Members
 
