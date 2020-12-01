@@ -178,24 +178,24 @@ table{
     border-collapse: collapse;
     text-align: left;
     overflow: hidden;
-    box-shadow: 2px 4px 2px rgb(48, 47, 47);
+    box-shadow: 2px 2px 2px rgb(48, 47, 47);
 }
     
    td, th{
-      border: 3px solid rgb(58, 57, 57);
+      border: 2px solid rgb(58, 57, 57);
       padding: 10px;
     }
     
     td{
-      border-left: 3px solid black;
-      border-right: 3px solid black;
+      border-left: 2px solid black;
+      border-right: 2px solid black;
     }
     
     th{
-      background-color:#8159ee;
+      background-color: #1186ca;
     }
     
-    tr:nth-of-type(odd) td{
-      background-color: lighten(#4ECDC4, 35%);
+    tr, td{
+      background-color: white;
     }
     
