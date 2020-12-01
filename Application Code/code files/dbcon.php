@@ -1,7 +1,7 @@
 <?php
 $server = "localhost";
 $user = "root";
-$password = "";
+$password = "pwdpwd";
 $db = "voting";
 
 $con = mysqli_connect($server, $user, $password, $db);
