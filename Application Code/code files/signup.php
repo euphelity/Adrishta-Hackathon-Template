@@ -40,12 +40,23 @@ if(isset($_POST['submit'])){
     $emailquery = " select * from voters where email='$email' ";
     $query = mysqli_query($con, $emailquery);
 
+    $regnoquery = " select * from voters where regno='$regno' ";
+    $regquery = mysqli_query($con, $regnoquery);
+
     $emailcount = mysqli_num_rows($query);
+    $regnocount = mysqli_num_rows($regquery);
 
     if($emailcount>0){
         ?>
     <script>
       alert("Email already exists");
+    </script>
+    <?php
+    }
+    elseif($regnocount>0){
+        ?>
+    <script>
+      alert("Registration number already exists");
     </script>
     <?php
     }
