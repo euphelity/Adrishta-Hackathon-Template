@@ -153,7 +153,7 @@ INSERT INTO `voters` (`
 id`,
 `username
 `, `email`, `password`, `regNo`, `ifvoted`) VALUES
-(1, 'admin', 'admin1@gmail.com', 'admin123', '0', 0);
+(1, 'admin', 'admin_202000000@smit.smu.edu.in', '$2y$10$xhmPbUI7aMaegtrFoxHVduymuH0s0KqAgn4xMtYvXjFQ9i44vcCB2', '202000000', 0);
 
 --
 -- Indexes for dumped tables

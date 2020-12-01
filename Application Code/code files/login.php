@@ -54,7 +54,7 @@ if(isset($_POST['submit'])){
 
         if($pass_decode){
             if(isset($_POST['admin']) && $_POST['admin'] == '1' ){
-                if($email=="admin1@gmail.com"){
+                if($email=="admin_202000000@smit.smu.edu.in"){
                     $displayquery = "select * from voters where email='$email'";
                 $query = mysqli_query($con, $displayquery);
                 $row = mysqli_fetch_assoc($query);

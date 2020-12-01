@@ -1,0 +1,29 @@
+#footer {
+  position: absolute;
+  bottom: auto;
+}
+h2 {
+  margin-top: 30px;
+}
+table {
+  border-collapse: collapse;
+  box-shadow: 2px 4px 2px rgb(48, 47, 47);
+}
+td,
+th {
+  border: 3px solid rgb(58, 57, 57);
+  padding: 10px;
+}
+
+td {
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+}
+
+th {
+  background-color: #8159ee;
+}
+
+tr:nth-of-type(odd) td {
+  background-color: lighten(#4ecdc4, 35%);
+}

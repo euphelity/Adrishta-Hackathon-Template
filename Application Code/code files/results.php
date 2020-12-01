@@ -25,6 +25,7 @@ session_start();
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css files/home.css" />
+    <link rel="stylesheet" href="css files/results.css" />
     <title>Home</title>
   </head>
 
@@ -63,10 +64,12 @@ session_start();
 
 
     <?php 
-    echo "<div class='container'>
+    echo "
     <div class='pt-3'>
       <h1 class='text-center pb-4'>Election Results </h1>
     </div>
+    <div class='container' style='margin-left:27%'>
+    
     ";
     include 'dbcon.php';
 
@@ -105,7 +108,7 @@ session_start();
             $i++; 
         }
         echo "</form>";
-        echo "</table>";
+        echo "</table><br>";
 
         echo "<!-- Candidate Detials -->
         <h2>Student Council Vice-Persident Results</h2>
@@ -136,7 +139,7 @@ session_start();
             $i++; 
         }
         echo "</form>";
-        echo "</table>";
+        echo "</table><br>";
 
         echo "<!-- Candidate Detials -->
         <h2>Student Council Persident Results</h2>
@@ -167,7 +170,7 @@ session_start();
             $i++; 
         }
         echo "</form>";
-        echo "</table>";
+        echo "</table><br>";
 
         echo "<!-- Candidate Detials -->
         <h2>Student Council Cultural Secretary Results</h2>
@@ -198,7 +201,7 @@ session_start();
             $i++; 
         }
         echo "</form>";
-        echo "</table>";
+        echo "</table><br>";
 
         echo "<!-- Candidate Detials -->
         <h2>Student Council Sports Secretary Results</h2>
@@ -229,7 +232,7 @@ session_start();
             $i++; 
         }
         echo "</form>";
-        echo "</table>";
+        echo "</table><br>";
         echo "<!-- Candidate Detials -->
         <h2>Student Council General Secretary Results</h2>
         <table border='1'>
@@ -259,7 +262,7 @@ session_start();
             $i++; 
         }
         echo "</form>";
-        echo "</table>";
+        echo "</table><br>";
     }
     else{
         ?>
@@ -270,14 +273,7 @@ session_start();
                 <?php
     }
           ?> 
-    <div
-      style="
-        height: 100vh;
-        position: relative;
-        top: 400px;
-        background-color: white;
-      ">
-      <hr />
+      </div>
       <div>
       <div id="footer">
         <div class="InnerSection" style="margin-right: 10vh">
