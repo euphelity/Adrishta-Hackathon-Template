@@ -135,7 +135,7 @@ if(isset($_POST['submit'])){
                 <div class="input-group-prepend">
                     <span class="input-group-text"> <i class="fa fa-envelope"></i></span>
                 </div>
-                <input name="email" class="form-control" placeholder="Email Address" type="email" required>
+                <input name="email" class="form-control" placeholder="Email Address" type="email" pattern=".+@smit.smu.edu.in" required>
                 </div>
                 <div class="form-group input-group">
                 <div class="input-group-prepend">
