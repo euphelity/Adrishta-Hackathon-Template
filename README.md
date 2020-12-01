@@ -33,12 +33,12 @@ Affix an image of the flow diagram/architecture diagram of the solution
 
 #### Technical Description
 
-**Technologies Used:**
+- **Technologies Used:**
   
   This application was built using majorly HTML5, CSS3, PHP and mySQL. HTML5 and CSS3 were used for developing the front end of the application. The back end development was done using PHP. The reltional database management was done using mySQL in combination with PHP. 
   For maintaining the server and database XAMPP was used. XAMPP is one of the widely used cross-platform web servers, which helps developers to create and test their programs on a local webserver. Specifically phpMyAdmin was used for databse mangement.
   
-  **Setup/Installation:**
+ - **Setup/Installation:**
   
   To run this project, you must have installed a virtual server i.e XAMPP on your PC (for Windows). After Starting Apache and MySQL in XAMPP, follow the following steps.
   1. Extract and copy the main project folder.
@@ -48,7 +48,7 @@ Affix an image of the flow diagram/architecture diagram of the solution
   5. Click on browse file and select “voting.sql” file which is inside the “code files” folder and click "go".
   6. With this the application is ready to run!
   
-  **Instructions to run:**
+ - **Instructions to run:**
   1. Open a browser and go to URL “http://localhost/Adrishta-Hackathon-Template/Application%20Code/code%20files/home1.php”
   2. Click on “Login/SignUp” tab on the navigation bar:
   3. The page will be redirected to a sign-up page. Create an account with valid credentails:
@@ -61,10 +61,11 @@ Affix an image of the flow diagram/architecture diagram of the solution
  
   4. To login as a administrator:
   
-    a. After creating an account, click on the “Login” option and enter the valid credentails. After that select the checkbox to login as an administrator.
-    b. After successfully loggig in the page will be redirected to the admin page.
-    c. Click on “Enable” to enable the election/voting process.
-    d. Click on “Disable” to disable the election/voting process.
+    a. After creating an account, click on the “Login” option and enter the valid credentails. 
+    b. After that select the checkbox to login as an administrator.
+    c. After successfully loggig in the page will be redirected to the admin page.
+    d. Click on “Enable” to enable the election/voting process.
+    e. Click on “Disable” to disable the election/voting process.
      
   5. To login as a voter:
   
