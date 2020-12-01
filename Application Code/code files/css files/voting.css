@@ -1,0 +1,16 @@
+.card {
+  border: 1px solid black;
+}
+.card img {
+  width: 15.3rem;
+  height: 100%;
+  object-fit: cover;
+}
+body {
+  background-color: rgba(90, 87, 87, 0.1);
+  background-image: linear-gradient(
+    to right,
+    rgb(196, 196, 196),
+    rgb(158, 219, 240)
+  );
+}
