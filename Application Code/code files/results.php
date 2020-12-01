@@ -1,5 +1,6 @@
 <?php
 session_start();
+$_SESSION["flag"]= 0;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -49,9 +50,18 @@ session_start();
       <div class="collapse navbar-collapse w-100" id="collapsibleNavbar">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="active" href="#">HOME</a>
+            <?php
+            if($_SESSION["flag"]==0){
+              echo"<a href='home1.html'>HOME</a>";
+            }
+            else{
+              echo"<a href='home2.php'>HOME</a>";
+            }
+            ?>
           </li>
-
+          <li class="nav-item">
+            <a class='active' href="#">RESULTS</a>
+          </li>
           <li class="nav-item">
             <a href="#footer">CONTACT</a>
           </li>
@@ -80,7 +90,7 @@ session_start();
     if($election['status']=="Disabled"){
         
         echo "<!-- Candidate Detials -->
-        <h2>Student Council Persident Results</h2>
+        <h2>Student Council President Results</h2>
         <table border='1'>
         <tr>
         <th>Photo</th>
@@ -111,7 +121,7 @@ session_start();
         echo "</table><br>";
 
         echo "<!-- Candidate Detials -->
-        <h2>Student Council Vice-Persident Results</h2>
+        <h2>Student Council Vice-President Results</h2>
         <table border='1'>
         <tr>
         <th>Photo</th>
@@ -142,7 +152,7 @@ session_start();
         echo "</table><br>";
 
         echo "<!-- Candidate Detials -->
-        <h2>Student Council Persident Results</h2>
+        <h2>Student Council Mess Secretary Results</h2>
         <table border='1'>
         <tr>
         <th>Photo</th>

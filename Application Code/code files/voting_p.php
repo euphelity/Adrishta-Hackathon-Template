@@ -33,7 +33,7 @@ session_start();
     <?php 
     echo "<div class='container'>
     <div class='pt-3'>
-      <h1 class='text-center pb-4'>Vote For Student Council Persident</h1>
+      <h1 class='text-center pb-4'>Vote For Student Council President</h1>
     </div>
     ";
         include 'dbcon.php';

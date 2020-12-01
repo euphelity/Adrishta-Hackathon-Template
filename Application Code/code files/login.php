@@ -81,6 +81,7 @@ if(isset($_POST['submit'])){
                 $row = mysqli_fetch_assoc($query);
                 $_SESSION["username"]=$row['username'];
                 $_SESSION["id"]=$row['id'];
+                $_SESSION["flag"]= 1;
                 ?>
                     <script>
                         alert("Login Successful");
