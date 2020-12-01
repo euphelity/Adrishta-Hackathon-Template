@@ -19,10 +19,12 @@ A brief description of
   
 ### Solution Description
 
-  A voter can simply sign up to make a new account and then Login to vote.They can only vote if they are a student of SMIT belonging to 1st, 2nd or 3rd year. 
-  The person can make their account only using their official E-mail ids given by the collage and entering a valid registration number.
-  A non- SMITian can only access the results of the election, restricting them from voting, thus eliminating outside interferance.
-  Each voter is allowed to vote only once for each position of the Student Council Election. There is also an administrator page which keeps check on the activation and      deactivation of the election and voting procedure. The admin can enable and disable the election at will. Additionally the administrator cannot see who a voter has voted for. The portal's voting feature gets disabled after a certain alloted period of time.
+ - A voter can simply sign up to make a new account and then Login to vote.They can only vote if they are a student of SMIT belonging to 1st, 2nd or 3rd year. 
+ - The person can make their account only using their official E-mail ids given by the collage and entering a valid registration number.
+ - A non- SMITian can only access the results of the election, restricting them from voting, thus eliminating outside interferance.
+ - Each voter is allowed to vote only once for each position of the Student Council Election.
+ - There is also an administrator page which keeps check on the activation and deactivation of the election and voting procedure. The admin can enable and disable the election at will. 
+ - Additionally the administrator cannot see who a voter has voted for. The portal's voting feature gets disabled after a certain alloted period of time.
 
 
 #### Architecture Diagram
