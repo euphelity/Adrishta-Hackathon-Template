@@ -1,6 +1,5 @@
 <?php
 session_start();
-$_SESSION["flag"]= 0;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -51,11 +50,11 @@ $_SESSION["flag"]= 0;
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <?php
-            if($_SESSION["flag"]==0){
-              echo"<a href='home1.html'>HOME</a>";
+            if($_SESSION["flag"]==1){
+              echo"<a href='home2.php'>HOME</a>";
             }
             else{
-              echo"<a href='home2.php'>HOME</a>";
+              echo"<a href='home1.php'>HOME</a>";
             }
             ?>
           </li>
