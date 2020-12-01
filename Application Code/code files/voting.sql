@@ -63,7 +63,7 @@ INSERT INTO `candidates` (`cid`,`cname`, `tid`, `position`, `votes`, `regNo`, `p
 (9, 'Kritika', 2, 'General Secretary', 0, '201800688', 'photos/pic 2.jpg'),
 (10, 'Bhavuk', 2, 'Cultural Secretary', 0, '201800508', 'photos/pic11.jpg'),
 (11, 'Semal', 2, 'Mess Secretary', 0, '201800108', 'photos/pic12.jpg'),
-(12, 'Khushi', 2, 'Sports Secretary', 0, '201800308', 'photos/pic3.jpg');
+(12, 'Khushi', 2, 'Sports Secretary', 0, '201800308', 'photos/pic03.jpeg');
 
 -- --------------------------------------------------------
 
