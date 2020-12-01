@@ -11,12 +11,21 @@ The following created sections in this README.md need to be duly filled, highlig
 A brief description of
 
 - What problem did the team try to solve?
+  The voting system tries to solve the problem of offline voting during the stiff situations of Covid. One does not
+  need to visit the ballot houses amidst this situation to cast thier precious votes.
 
 - What is the proposed solution?
-
+  The solution is that all the eligible voters can cast their precious votes online.All they need to do is have a valid email id , registration number and password to signup. 
 ### Solution Description
 
 Explain your solution to the problem in detail here.
+
+  The voter can simply sign up to make a new account and then Login and vote only if they are the students of SMIT belonging to 1st, 2nd or 3rd year. 
+  The person will only be eligible to vote if they use their official E-mail ids and enter a valid registration number.
+  A non- SMITian can only have the access to view the results of the election, restricting them from voting, thus eliminating outside interferance.
+  Each voter is allowed to vote only once for each post of the council election.
+  Also, there is an admin page which keeps check on the activation and deactivation of the voting procedure.The portal's voting feature gets disabled after a certain alloted period of time.
+
 
 #### Architecture Diagram
 
@@ -38,13 +47,21 @@ Affix the relevant screenshots of the developed project here.
 
 ### Team Members
 
-List of team member names and email IDs with their contributions.
-|Member Name|Email|Contribution|
-|-----------|-----|------------|
-|Member 1|mem1@example.com|Something important|
-|Member 2|mem2@example.com|Something important|
-|Member 3|mem3@example.com|Something important|
+List of team member names and email IDs with their contributions:
+
+
+|Aditi Bansal|aditi_201800488@smit.smu.edu.in|Suggested the UI/UX and Worked on Front end of the website |
+
+|Kumari Ayushi Sinha|kumari_201800539@smit.smu.edu.in|Something important|
+
+|Pratyush Sharma|pratyush_201800543@smit.smu.edu.in|Worked on backend development and database|
 
 ### References
 
-Affix links to the online tools/repositories/blogs etc., which helped you along the development of the project
+For the Front-end:
+1. https://codepen.io/Adroit11/pen/VgEBKL
+
+For the Backend:
+1. https://www.w3schools.com/php/php_regex.asp
+2. https://www.w3schools.com/php/php_sessions.asp
+3. https://www.w3schools.com/sql/sql_insert_into_select.asp
