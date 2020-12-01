@@ -178,11 +178,11 @@ table{
     border-collapse: collapse;
     text-align: left;
     overflow: hidden;
-    box-shadow: 2px 4px 2px rgb(88, 87, 87);
+    box-shadow: 2px 4px 2px rgb(48, 47, 47);
 }
     
    td, th{
-      border: 3px solid rgb(109, 103, 103);
+      border: 3px solid rgb(58, 57, 57);
       padding: 10px;
     }
     
