@@ -83,8 +83,8 @@ body {
 .container {
   width:24%;
   height: 70%;
-  margin-left: auto 0;
-  margin-bottom:210px;
+  margin: 0;
+ 
  
   padding:0px;
 }
@@ -128,7 +128,7 @@ li {
   padding-left: 170px;
 }
 body{
-  overflow:auto;
+  overflow:scroll;
   background-image:linear-gradient(to right,rgb(223, 217, 217,0.3),lightblue);
 }
 

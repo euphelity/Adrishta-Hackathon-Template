@@ -24,6 +24,11 @@ session_start();
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;500;600;700;800&display=swap"
       rel="stylesheet">
       <link rel="stylesheet" href="css files/login.css" />
+      <style>
+        body{
+          overflow-y:hidden;
+        }
+      </style>
 </head>
 <body>
 
@@ -136,7 +141,7 @@ if(isset($_POST['submit'])){
         </ul>
       </div>
     </nav>
-        <div class="card bg-light login-box">
+        <div class="card bg-light login-box" style="margin-top:90px;">
             <article class="card-body mx-auto">
             <h4 class="card-title mt-3 text-center">Create Account</h4>
             <p class="text-center">Get started with your free account</p>
