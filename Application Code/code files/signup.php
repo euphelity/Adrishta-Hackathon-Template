@@ -61,7 +61,7 @@ if(isset($_POST['submit'])){
     <?php
     }
     else{
-        if($password === $cpassword){
+        if($password === $cpassword && strpos($email,$regno)){
             if(preg_match("/2018/i",$regno) || preg_match("/2019/i",$regno) || preg_match("/2020/i",$regno)){
                 $ifvoted = 0;
             }
