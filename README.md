@@ -35,12 +35,12 @@ Affix an image of the flow diagram/architecture diagram of the solution
 
 - **Technologies Used:**
   
-  This application was built using majorly HTML5, CSS3, PHP and mySQL. HTML5 and CSS3 were used for developing the front end of the application. The back end development was done using PHP. The reltional database management was done using mySQL in combination with PHP. 
+  This application was built majorly using HTML5, CSS3, Bootstrap, PHP and mySQL. HTML5,CSS3 and Bootstrap were used for developing the front end of the application. The back end development was done using PHP. The reltional database management was done using mySQL in combination with PHP. 
   For maintaining the server and database XAMPP was used. XAMPP is one of the widely used cross-platform web servers, which helps developers to create and test their programs on a local webserver. Specifically phpMyAdmin was used for databse mangement.
   
  - **Setup/Installation:**
   
-  To run this project, you must have installed a virtual server i.e XAMPP on your PC (for Windows). After Starting Apache and MySQL in XAMPP, follow the following steps.
+  To run this project, one must have to install a virtual server i.e XAMPP on the PC (for Windows). After Starting Apache and MySQL in XAMPP, follow the following steps.
   1. Extract and copy the main project folder.
   2. Paste the folder in xampp/htdocs
   3. Open a browser and go to URL “http://localhost/phpmyadmin/” and click the databse tab.
@@ -63,14 +63,14 @@ Affix an image of the flow diagram/architecture diagram of the solution
   
     a. After creating an account, click on the “Login” option and enter the valid credentails. 
     b. After that select the checkbox to login as an administrator.
-    c. After successfully loggig in the page will be redirected to the admin page.
+    c. After successfully logging in, the page will be redirected to the admin page.
     d. Click on “Enable” to enable the election/voting process.
     e. Click on “Disable” to disable the election/voting process.
      
   5. To login as a voter:
   
     a. After creating an account, click on the “Login” option and enter the valid credentails to login.
-    b. After successfully loggig in the page will be redirected to the home page.
+    b. After successfully logging in, the page will be redirected to the home page.
     c. Click on “Vote for Council” to begin voting when the election is enabled.
     d. Click on “View Results” to view the results when the election is disabled.
   
