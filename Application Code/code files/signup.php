@@ -55,7 +55,7 @@ if(isset($_POST['submit'])){
                 $ifvoted = 0;
             }
             else{
-                $ifvoted = 1;
+                $ifvoted = -1;
             }
             $insertquery = "insert into voters(username, email, password, regNo, ifvoted) values('$username','$email','$pass','$regno','$ifvoted')";
             $iquery = mysqli_query($con, $insertquery);
