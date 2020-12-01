@@ -88,7 +88,7 @@ List of team member names and email IDs with their contributions:
 
 |Kumari Ayushi Sinha|kumari_201800539@smit.smu.edu.in|Suggested the UI/UX and Worked on Front end of the website|
 
-|Pratyush Sharma|pratyush_201800543@smit.smu.edu.in|Worked on backend development and database|
+|Pratyush Sharma|pratyush_201800543@smit.smu.edu.in|Worked on backend development and database management|
 
 ### References
 
