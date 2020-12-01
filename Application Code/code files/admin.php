@@ -24,7 +24,8 @@ session_start();
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css files/home.css" />
+  
+    <link rel="stylesheet" href="css files/admin.css"/>
     <title>Home</title>
   </head>
 
@@ -48,7 +49,7 @@ session_start();
       <div class="collapse navbar-collapse w-100" id="collapsibleNavbar">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="active" href="#">HOME</a>
+            <a class="active" href="#">ADMIN</a>
           </li>
 
           <li class="nav-item">
@@ -65,7 +66,8 @@ session_start();
     <?php 
     echo "<div class='container'>
     <div class='pt-3'>
-      <h1 class='text-center pb-4'>Election Details</h1>
+      <h1 class='text-center pb-4' style='margin-top:25px; font-weight:800;color: rgb(230, 87, 5);'>Election Details</h1>
+      <hr>
     </div>
     ";
         include 'dbcon.php';
@@ -103,8 +105,8 @@ session_start();
             $votequery = mysqli_query($con, $voteselect);
             $vote = mysqli_fetch_assoc($votequery);
             echo "<td>" . $vote['count(id)'] . "</td>";
-            echo "<td><button type = 'submit' name = 'enable" . $i ."' id='myBtn'>Enable</button> </td>"; 
-            echo "<td><button type = 'submit' name = 'disable" . $i ."' id='myBtn'>Disable</button> </td>";
+            echo "<td><button type = 'submit' name = 'enable" . $i ."' id='myBtn' class='button sec-1-btn'>Enable</button> </td>"; 
+            echo "<td><button type = 'submit' name = 'disable" . $i ."' id='myBtn' class='button sec-1-btn'>Disable</button> </td>";
             echo "</tr>";  
             $i++; 
         }

@@ -78,7 +78,38 @@ if(isset($_POST['submit'])){
 ?>
 
     <div class="container">
-    <div class="card bg-light login-box" style="top:15%; box-shadow:2px 4px 2px skyblue;">
+    <nav
+      class="navbar navbar-expand-md navbar-dark fixed-top px-5 py-0 theme bg-primary" id="custom-nav"
+    >
+      <a class="navbar-brand pl-5 ml-5" href="#"
+        ><span class="logo"
+          ><img
+            src="https://smu.edu.in/content/dam/manipal/smu/images/logos/smit-logo-2020.png" /></span
+      ></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse w-100" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a  href="home1.html">HOME</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#footer">CONTACT</a>
+          </li>
+          <li class="nav-item">
+            <a href="login.php" class="active">LOGIN/SIGN UP</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="card bg-light login-box" style="top:15%; box-shadow:2px 4px 2px skyblue; margin-top:100px;">
         <article class="card-body mx-auto" style="max-width: 400px;">
         <h4 class="card-title mt-3 text-center">Create Account</h4>
         <p class="text-center">Get started with your free account</p>
