@@ -52,18 +52,18 @@ CREATE TABLE `candidates`
 --
 
 INSERT INTO `candidates` (`cid`,`cname`, `tid`, `position`, `votes`, `regNo`, `photo`) VALUES
-(1, 'Nehal', 1, 'president', 0, '201800488', 'photos/default_photo.jpg'),
-(2, 'Ronak', 1, 'Vice President', 0, '201800566', 'photos/default_photo.jpg'),
-(3, 'Rahul', 1, 'General Secretary', 0, '201800608', 'photos/default_photo.jpg'),
-(4, 'Vishal', 1, 'Cultural Secretary', 0, '201800588', 'photos/default_photo.jpg'),
-(5, 'Ruchika', 1, 'Mess Secretary', 0, '201800288', 'photos/default_photo.jpg'),
-(6, 'Naman', 1, 'Sports Secretary', 0, '201800388', 'photos/default_photo.jpg'),
-(7, 'Sanyam', 2, 'president', 0, '201800188', 'photos/default_photo.jpg'),
-(8, 'Sushant', 2, 'Vice President', 0, '201800133', 'photos/default_photo.jpg'),
-(9, 'Kritika', 2, 'General Secretary', 0, '201800688', 'photos/default_photo.jpg'),
-(10, 'Bhavuk', 2, 'Cultural Secretary', 0, '201800508', 'photos/default_photo.jpg'),
-(11, 'Semal', 2, 'Mess Secretary', 0, '201800108', 'photos/default_photo.jpg'),
-(12, 'Khushi', 2, 'Sports Secretary', 0, '201800308', 'photos/default_photo.jpg');
+(1, 'Nehal', 1, 'president', 0, '201800488', 'photos/pic4.jpg'),
+(2, 'Ronak', 1, 'Vice President', 0, '201800566', 'photos/pic5.jpg'),
+(3, 'Rahul', 1, 'General Secretary', 0, '201800608', 'photos/pic6.jpg'),
+(4, 'Vishal', 1, 'Cultural Secretary', 0, '201800588', 'photos/pic7.jpg'),
+(5, 'Ruchika', 1, 'Mess Secretary', 0, '201800288', 'photos/pic1.jpg'),
+(6, 'Naman', 1, 'Sports Secretary', 0, '201800388', 'photos/pic8.jpg'),
+(7, 'Sanyam', 2, 'president', 0, '201800188', 'photos/pic9.jpg'),
+(8, 'Sushant', 2, 'Vice President', 0, '201800133', 'photos/pic10jpg'),
+(9, 'Kritika', 2, 'General Secretary', 0, '201800688', 'photos/pic 2.jpg'),
+(10, 'Bhavuk', 2, 'Cultural Secretary', 0, '201800508', 'photos/pic11.jpg'),
+(11, 'Semal', 2, 'Mess Secretary', 0, '201800108', 'photos/pic12.jpg'),
+(12, 'Khushi', 2, 'Sports Secretary', 0, '201800308', 'photos/pic3.jpg');
 
 -- --------------------------------------------------------
 
