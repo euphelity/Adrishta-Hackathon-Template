@@ -65,42 +65,46 @@ session_start();
     <?php 
     echo "<div class='container'>
     <div class='pt-3'>
-      <h1 class='text-center pb-4'>Vote For Student Council Persident</h1>
+      <h1 class='text-center pb-4'>Election Details</h1>
     </div>
     ";
         include 'dbcon.php';
-        $electionselect = "select * from election where eid=1 ";
-        $electionquery = mysqli_query($con, $electionselect);
-        $election = mysqli_fetch_assoc($electionquery);
-      if($_SESSION['flag_p']==0 && $election['status']=="Enabled"){
 
-            echo "<!-- Candidate Detials -->
+            echo "<!-- Election Detials -->
                 <table border='1'>
                 <tr>
-                <th>Photo</th>
-                <th>Candidate Id</th>
+                <th>Id</th>
                 <th>Name</th>
-                <th>Team</th>
-                <th>Team Slogan</th>
-                <th>Vote!</th>
+                <th>Total Teams</th>
+                <th>Total Candidate</th>
+                <th>Total Votes Counted</th>
+                <th>Enable</th>
+                <th>Disable</th>
                 </tr>";
-        $candidateselect = "select * from candidates where position = 'president' ";
-        $candidatequery = mysqli_query($con, $candidateselect);
+        $electionselect = "select * from election";
+        $electionquery = mysqli_query($con, $electionselect);
         $i=1;
         echo "<form method='POST'>";
-        while($candidate = mysqli_fetch_assoc($candidatequery)){
-            $tid = $candidate['tid'];
-            $teamselect = "select * from teams where tid = '$tid' ";
-            $userquery = mysqli_query($con, $teamselect);
-            $user = mysqli_fetch_assoc($userquery);
+        while($election = mysqli_fetch_assoc($electionquery)){
+           
             echo "<tr>";
-            echo "<td><img src='" . $candidate['photo'] . "' alt='default'/>";
-            echo "<td>" . $candidate['cid'] . "</td>";
-            echo "<input type = 'hidden' name = 'cid" . $i . "' value='" . $candidate['cid'] . "'>";
-            echo "<td>" . $candidate['cname'] . "</td>";
-            echo "<td>" . $user['tname'] . "</td>";
-            echo "<td>" . $user['slogan'] . "</td>";
-            echo "<td><button type = 'submit' name = 'details" . $i ."' id='myBtn'>Vote</button> </td>"; 
+            echo "<td>" . $election['eid'] . "</td>";
+            echo "<input type = 'hidden' name = 'cid" . $i . "' value='" . $election['eid'] . "'>";
+            echo "<td>" . $election['ename'] . "</td>";
+            $teamselect = "select count(*) from teams";
+            $teamquery = mysqli_query($con, $teamselect);
+            $team = mysqli_fetch_assoc($teamquery);
+            echo "<td>" . $team['count(*)'] . "</td>";
+            $candidateselect = "select count(*) from candidates";
+            $candidatequery = mysqli_query($con, $candidateselect);
+            $candidate = mysqli_fetch_assoc($candidatequery);
+            echo "<td>" . $candidate['count(*)'] . "</td>";
+            $voteselect = "select count(id) from voters where ifvoted=1";
+            $votequery = mysqli_query($con, $voteselect);
+            $vote = mysqli_fetch_assoc($votequery);
+            echo "<td>" . $vote['count(id)'] . "</td>";
+            echo "<td><button type = 'submit' name = 'enable" . $i ."' id='myBtn'>Enable</button> </td>"; 
+            echo "<td><button type = 'submit' name = 'disable" . $i ."' id='myBtn'>Disable</button> </td>";
             echo "</tr>";  
             $i++; 
         }
@@ -109,25 +113,29 @@ session_start();
         $j=1;
         while($j<=$i){
             
-            if( isset($_POST['details' . $j]) ){
-                  $_SESSION["flag_p"] = 1;
-                  $cid = $_POST['cid' . $j];
-                  $voteselect = " update candidates set votes = votes + 1 where cid = '$cid' ";
-                  $votequery = mysqli_query($con, $voteselect);
+            if( isset($_POST['enable' . $j]) ){
+                  $eid = $_POST['cid' . $j];
+                  $elselect = " update election set status = 'Enabled' where eid = '$eid' ";
+                  $elquery = mysqli_query($con, $elselect);
                   ?>
-                        <script>location.replace('voting_vp.php')</script>
+                        <script>alert("Election Enabled!");</script>
                   <?php
             }
             $j++;
         }
-      }
-      else{
-        echo "<div class='container'>
-    <div class='pt-3'>
-      <h1 class='text-center pb-4'>You cannot vote for this Category!</h1>
-    </div>
-    ";
-      }
+        $k=1;
+        while($k<=$i){
+            
+            if( isset($_POST['disable' . $k]) ){
+                  $eid = $_POST['cid' . $k];
+                  $elselect = " update election set status = 'Disabled' where eid = '$eid' ";
+                  $elquery = mysqli_query($con, $elselect);
+                  ?>
+                        <script>alert("Election Disabled!");</script>
+                  <?php
+            }
+            $k++;
+        }
         echo "</div> </div>" ;
           ?> 
     <div
